@@ -32,7 +32,7 @@ def get_min_max_by_time(hour=None, minute=None):
     print("读取到的配置min_step:",min_step)
     max_step = get_int_value_default(config, 'MAX_STEP', 25000)
     print("读取到的配置max_step:",max_step)
-    return int(time_rate * min_step), int(time_rate * max_step)
+    return min_step, max_step
 
 
 # 虚拟ip地址
